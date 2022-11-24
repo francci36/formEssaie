@@ -1,435 +1,777 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="formulaireEssaie.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire 1ère page</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
-
-    <!--Entête-->
     <header>
-      <div class="entete">
-              <img src="cciCher.png" alt="">
-              <img src="cciForma.png" alt="">
-      </div>
-  </header>
-  <!--Contenue du corps de la page-->
-  <article>
-      <div class="haut">
-          <h1>développeu.se.r web et web mobile</h1>
-          <h2>dossier de candidature</h2>
-          <h3>du 29 septembre 2022 au 30 Juin 2023 </h3>
-          <div class="">
-              <p>(remise à niveau possible du 15 au 28 septembre 2022</p>
-              <span>(date limite de depot du dossier le 12/07/2022 a 17h)</span>
-          </div>
-      </div>
-      <form class="conteneur" method='POST' action='reçoit des données'>
-          <div class="civilite">
-              <label for="civilite">Civilité</label>
-              <input type="radio" name="civilité" value="mme" /> <label>Mme</label>
-              <input type="radio" name="civilité" value="m" /> <label>M</label> <br>
-              <label for="nom">Nom d'usage</label>
-              <input type='text' id='nom' name='nom' required>
-              <label for="prenom">Prénom</label>
-              <input type='text' id='prenom' name='prenom' required> <br>
-              <label for="nom de naissace">Nom de naissance</label>
-              <input type='text' id='nom de naissance' name='nom de naissance' required>
-              <label for="date de naissance">Nom de naissance</label>
-              <input type='date' id='date de naissance' name='date de naissance' required pattern="[dd] [mm] [aaaa] " >
-              <label for="lieu de naissance">Lieu</label>
-              <input type='text' id='lieu' name='lieu' required> <br>
-              <label for="nationalite">Nationalite</label>
-              <input type='text' id='nationalite' name='nationalite' required> <br>
-              <label for="adresse">Adresse</label>
-              <input type='text' id='adresse' name='adresse' required>
-              <label for="ville">Ville</label>
-              <input type='text' id='ville' name='ville' required>
-              <label for="code postal">Code postal</label>
-              <input type='chiffre' id='code postal' name='code postal' required>
-              <label for="ville">Ville</label>
-              <input type='text' id='ville' name='ville' required>
-              <label for="telephone">Téléphone</label>
-              <input type='tél' id='phone' name='phone' required pattern="0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="06 00 00 00 00 00">
-              <label for="portable">Portable</label>
-              <input type='numero' id='portable' name='portable' required pattern="0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="01 00 00 00 00 00">
-              <label for="e-mail">E-mail</label>
-              <input type='email' id='e-mail' name='e-mail' required>
-          </div>
-          <div class="situation-familiale">
-              <label for="permis de conduire">Titulaire du permis B</label>
-              <input type="radio" name="titulaire du permis de conduire" value="oui" checked="checked" /> <label>oui</label>
-              <input type="radio" name="titulaire du permis" value="non" /> <label>non</label>
-              <input type="radio" name="titulaire du permis" value="en cours" checked="checked" /> <label>en cours</label>
-              <label for="situation familiale">Situation familiale</label>
-              <input type="radio" name="situation-familiale" value="celibataire" /> <label>celibataire</label>
-              <input type="radio" name="situation-familiale" value="vie maritale" /> <label>Vie maritale</label>
-              <input type="radio" name="situation-familiale" value="pacs" /> <label>Pacs</label>
-              <input type="radio" name="situation-familiale" value="marié.e" /> <label>Marié.e</label>
-              <input type="radio" name="situation-familiale" value="veuf.ve" /> <label>Veuf.ve</label>
-              <input type="radio" name="situation-familiale" value="divorcé.e" /> <label>Divorcé.e</label> <br>
-              <label for="nombre d'enfants">Nombre d'enfants</label>
-              <input type='text' id="nombre d'enfants" name="nombre d'enfants" required>
-              <label for="dont">dont</label>
-              <input type='text' id='dont' name='dont' required>
-          </div>
-          <div class="adress2">
-              <p>Si différente pendant le stage</p>
-              <div>
-                  <label for="adresse-postal">Adresse postale</label>
-                  <input type='text' id='adresse-postale' name='adresse postale' required>
-                  <label for="code postal">Code postale</label>
-                  <input type='text' id='code postale' name='code postale' required>
-                  <label for="ville">Ville</label>
-                  <input type='text' id='ville' name='ville' required>
-                  <label for="travailleur.se handicape.e">Êtes-vous reconnu.u Travailleur.se Handicapé.e</label>
-                  <input type="radio" name="travailleur.se handicape.e" value="oui" /> <label>oui (joindre justificatif)</label>
-                  <input type="radio" name="travailleur.se handicape.e" value="non" /> <label>non</label>
-                  <label for="n° de securite sociale">N° de Sécurité Sociale</label>
-                  <input type='numero' id='n° de securite sociale' name='n° de securite sociale' required pattern="0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="">
-              </div>
-          </div>
-          <div class="contact">
-              <p>Personne à contacter en cas d'urgence</p>
-              <label for="civilite">Civilité</label>
-              <input type="radio" name="civilité" value="mme" /> <label>Mme</label>
-              <input type="radio" name="civilité" value="m" /> <label>M</label>
-              <label for="nom">Nom</label>
-              <input type='text' id='nom' name='nom' required>
-              <label for="prenom">Prénom</label>
-              <input type='text' id='prenom' name='prenom' required>
-              <label for="portable">Portable</label>
-              <input type='numero' id='portable' name='portable' required pattern="0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="01 00 00 00 00 00">
-              <label for="e-mail">E-mail</label>
-              <input type='email' id='e-mail' name='e-mail' required>
-              <label for="lien de parente">Lien de parenté</label>
-              <input type='lien de parente' id='lien de parente' name='lien de parenté' required>
-          </div>
-      </form>
-  </article>
-  <!--Le pied de page-->
-  <footer>
-      <div class="image">
-           
-          <span><img src="logoAven.png" alt=""></span>
-          <span><img src="logoCVL.png" alt=""></span>
-          <span><img src="logoHCC.png" alt=""></span>
-      </div>
-      <div>
-          <p>Avenue d'Issoudun - CS 70237 - 18022 - Bourges Cedex <br>
-          T. 02 48 67 80 80 - F. 02 48 67 80 99 - www.cher.cci.fr <br>
-          SIRET 181 800 012</p>
-          <p>Campus de la CCI du Cher - 25rue Louis Mallet - CS 70237 - 18022 Bourges Cedex <br>
-          T. 02488675555 - F. 0248205750</p>
-      </div>
-
-
-  </footer>   
-  <!--Fin  de ma première page--> 
-  <!--Début de la 2ème page-->
-
-  <div class="table">
-<!--tableau Autres-->
-    <table>
-      <thead>
-                  <tr>
-                    <th colspan="2">Autres</th>
-                  </tr>
-      </thead>
-        <tbody>
-                  <tr>
-                    <td>Vos principales FORCES 
-                      <label for="vos principales forces"></label>
-                      <textarea name="vos forces principales" id="vos-principales-forces" cols="30" rows="10"></textarea>
-                    </td>
-                    <td>Vos principales LIMITES 
-                      <textarea name="vos principales limites" id="vos-principales-limites" cols="30" rows="10"></textarea>
-                    </td>
-                  </tr>
-        </tbody>
-    </table>
-    <!--Tableau Formation initial tableaux entièrement en checkbox et radio-->
-    <table>
-      <thead>
-            <tr>
-                <th colspan="3">FORMATION INITIALE (Scolarité)</th>
-            </tr>
-      </thead>
-      <tbody>
-          <tr>
-            <td>Niveau de Formation
-                  <fieldset>
-                    <div>
-                      <input type="checkbox" id="c1" name="c1">
-                      <label for="c1">1 et 2 Fin de scolarité obligatoire</label>
-                    </div>
-                    <div>
-                      <input type="checkbox" id="c2" name="c2">
-                      <label for="c2">3 Brevet</label>
-                    </div>
-                    <div>
-                      <input type="checkbox" id="c3" name="c3">
-                      <label for="c3">3 CAP, BEP</label>
-                    </div>
-                    <div>
-                      <input type="checkbox" id="c4" name="c4">
-                      <label for="c4">4 Baccalauréat</label>
-                    </div>
-                    <div>
-                      <input type="checkbox" id="c5" name="c5">
-                      <label for="c5">5 DEUG, BTS, DUT, DEUST</label>
-                    </div>
-                    <div>
-                      <input type="checkbox" id="c6" name="c6">
-                      <label for="c6">6 Licence, Licence professionnelle</label>
-                    </div>
-                    <div>
-                      <input type="checkbox" id="c6" name="c6">
-                      <label for="c6">6 Maîtrise, Master 1</label>
-                    </div>
-                    <div>
-                      <input type="checkbox" id="c7" name="c7">
-                      <label for="c7">7 Master, Diplôme d’études approfondies,
-                        Diplôme d’études supérieures
-                        spécialisées,</label>
-                    </div>
-                    <div>
-                      <input type="checkbox" id="c8" name="c8">
-                      <label for="c8">Diplôme d’ingénieur
-                        8 Doctorat, Habilitation à diriger des
-                        recherches</label>
-                    </div>
-                </fieldset>
-            </td>
-            <td>Avez-vous suivi une action
-                  <fieldset>
-                  <div>
-                    <input type="checkbox" id="c9" name="c9">
-                    <label for="c9">de Mobilisation</label>
-                  </div>
-                  <div>
-                    <input type="checkbox" id="c10" name="c10">
-                    <label for="c10">de Qualification</label>
-                  </div>
-                  <div>
-                    <input type="checkbox" id="c11" name="c11">
-                    <label for="c11">d’un Bilan de
-                      Compétences</label>
-                  </div>
-                  </fieldset>
-            </td>
-            <td>Connaissances en Informatique
-                    <fieldset>
-                    <div>
-                      <input type="radio" id="oui" name="connaissances" checked>
-                      <label for="c12">Oui</label>
-                    </div>
-                    <div>
-                      <input type="radio" id="non" name="connaissances">
-                      <label for="c13">Non</label>
-                    </div>
-                    <!--Fin de la partie checkbox-->
-                  </fieldset>
-            </td>
-          </tr>
-      </tbody>
-  </table>
-  <table>
-    <thead>
-                <tr>
-                  <th colspan="2">Autres</th>
-                </tr>
-    </thead>
-      <tbody>
-                <tr>
-                  <td>Diplôme(s) obtenu(s) et année(s) d’obtention :
-                    <label for="diplome">Diplôme(s) obtenu(s) et année(s) d’obtention :</label>
-                    <textarea name="fin de scolarite" id="fin de scolarite" cols="30" rows="5"></textarea>
-                  </td>
-                </tr>
-      </tbody>
-  </table>
-  <!--Ci-dessous est un tableau intièrement en input type textarea-->
-  <table>
-    <thead>
-                <tr>
-
-                  <th colspan="3">Rappelez précisemment la date de fin de votre scolarité :</th>
-                </tr>
-    </thead>
-      <tbody>
-                <tr>
-                  <td>Jour 
-                    <label for="jour"></label>
-                    <textarea name="jour" id="jour" cols="15" rows="5"></textarea>
-                  </td>
-                  <td>Mois 
-                    <textarea name="mois" id="mois" cols="15" rows="5"></textarea>
-                  </td>
-                  <td>Année 
-                    <textarea name="annee" id="annee" cols="15" rows="5"></textarea>
-                  </td>
-                </tr>
-      </tbody>
-  </table>
-  <!--Fin du tableau formation initiale-->
-  <table>
-    <thead>
-                <tr>
-
-                  <th colspan="2">FORMATION CONTINUE (professionnelle)</th>
-                </tr>
-    </thead>
-      <tbody>
-                <tr>
-                  <fieldset>
-                    <legend>Avez-vous effectué durant les 12 derniers mois un ou plusieurs
-                      stages rémunérés dans le cadre de la formation
-                      professionnelle ?</legend>
-                    <div>
-                      <input type="radio" id="oui" name="professionnelle" checked>
-                      <label for="professionnelle">Oui (complétez tableau ci-
-                        dessous)</label>
-                    </div>
-                    <div>
-                      <input type="radio" id="non" name="professionnelle">
-                      <label for="professionnelle">Non</label>
-                    </div>
-                  </fieldset>
-                </tr>
-      </tbody>
-  </table>
-  <table>
-    <thead>
-                <tr>
-                  <th colspan="3"></th>
-                </tr>
-    </thead>
-      <tbody>
-                <tr>
-                  <td>
-                    <label for="dates">Dates précises du:</label>
-                    <input type='text' id='date' name='nom' required>
-                    <label for="dates">au:</label>
-                    <input type='text' id='date' name='nom' required>
-                    <label for="dates">du:</label>
-                    <input type='text' id='date' name='nom' required>
-                    <label for="dates">au:</label>
-                    <input type='text' id='date' name='nom' required>
-                  </td>
-                  <td>
-                    <label for="organisme">Nom de L'organisme</label>
-                    <textarea name="organisme" id="organisme" cols="15" rows="10"></textarea>
-                  </td>
-                  <td>
-                    <label for="formation">Nom de la formation</label>
-                    <textarea name="formation" id="formation" cols="15" rows="10"></textarea>
-                  </td>
-                  <td>
-                    <label for="nature">Nature de la
-                      Formation</label>
-                    <textarea name="nature" id="nature" cols="15" rows="10"></textarea>
-                  </td>
-                </tr>
-      </tbody>
-  </table>
-  <!--Fin du tableau Formation continue-->
-  <table>
-    <thead>
-                <tr>
-                  <th colspan="5">Autres</th>
-                </tr>
-                <h3>SITUATION ACTUELLE</h3>
-    </thead>
-      <tbody>
-                <tr>
-                    <td> 
-                      <!-- Début Ceci est un champs d'input avec check box-->
+    <div class="logo-header">
+        <div class="cci">
+            <img src="cciCher.png" alt="">
+        </div>
+        <div class="cci-form">
+        <img src="cciForma.png" alt="">
+        </div>
+    </div>
+    </header>
+ <!--Entête-->
+<!--Contenue du corps de la page-->
+    <div class="tableau1">
+        <div class="haut">
+            <h1>développeu.se.r web et web mobile</h1>
+            <h2>dossier de candidature</h2>
+            <h3>du 29 septembre 2022 au 30 Juin 2023 </h3>
+            <div class="petite-police">
+                <p>(remise à niveau possible du 15 au 28 septembre 2022</p>
+                <span>(date limite de depot du dossier le 12/07/2022 a 17h)</span>
+            </div>
+        </div>
+        <table class="civilite">
+               <!--<form class="conteneur" method='POST' action='reçoit des données'></form>-->
+            <tbody>
+               <tr>
+                    <td>
                         <fieldset>
-                          <legend>VOUS ÊTES SANS EMPLOI</legend>
-                            <div>
-                              <input type="checkbox" id="c1" name="c1">
-                              <label for="c1">Vous n’avez jamais travaillé</label>
-                            </div>
-                            <div>
-                              <input type="checkbox" id="c2" name="c2">
-                              <label for="c2">Vous avez déjà travaillé</label>
-                            </div>
-                            <!--Ci-dessous ceux sont des checkbox type radis avec choix oui et non-->
-                            <div>
-                              <label for="inscrit">Vous êtes-vous inscrit(e) à Pôle Emploi :</label>
-                              <input type="radio" id="oui" name="inscrit" checked>
-                              <label for="oui">oui</label>
-                            </div>
-                            <div>
-                              <input type="radio" id="non" name="inscrit">
-                              <label for="inscrit">Non</label>
+                        <legend>Civilité</legend>
+                            <label for="civilite"></label> <br>
+                            <input type="radio" name="civilité" value="mme" /> <label>Mme</label>
+                            <input type="radio" name="civilité" value="m" /> <label>M</label> <br>
+                            <label for="nom">Nom d'usage</label>
+                             <input type='text' id='nom' name='nom' required>
+                            <label for="prenom">Prénom</label>
+                            <input type='text' id='prenom' name='prenom' required> <br>
+                            <label for="date de naissance">Nom de naissance</label>
+                            <input type='text' id='date de naissance' name='date de naissance' required >
+                            <label for="lieu de naissance">Lieu</label>
+                            <input type='text' id='lieu' name='lieu' required> <br>
+                            <label for="nationalite">Nationalite</label>
+                            <input type='text' id='nationalite' name='nationalite' required> <br>
+                            <label for="adresse">Adresse</label>
+                            <input type='text' id='adresse' name='adresse' required>
+                            <label for="ville">Ville</label>
+                            <input type='text' id='ville' name='ville' required>
+                            <label for="code postal">Code postal</label>
+                            <input type='chiffre' id='code postal' name='code postal' required>
+                            <label for="telephone">Téléphone</label>
+                            <input type='tél' id='phone' name='phone' required pattern="0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="06 00 00 00 00 00">
+                            <label for="portable">Portable</label>
+                            <input type='numero' id='portable' name='portable' required pattern="0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="01 00 00 00 00 00">
+                            <label for="e-mail">E-mail</label>
+                            <input type='email' id='e-mail' name='e-mail' required>
+                            
+                        </fieldset>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <div class="situation-familiale">
+                                <label for="permis de conduire">Titulaire du permis B</label>
+                                <input type="radio" name="permis de conduire" value="oui" checked /><label>oui</label>
+                                <input type="radio" name="permis de conduire" value="non" /> <label>non</label>
+                                <input type="radio" name="permis de conduire" value="en cours" /> <label>en cours</label><br>
+                                <label for="situation familiale">Situation familiale</label>
+                                <input type="radio" name="situation-familiale" value="celibataire" /> <label>celibataire</label>
+                                <input type="radio" name="situation-familiale" value="vie maritale" /> <label>Vie maritale</label>
+                                <input type="radio" name="situation-familiale" value="pacs" /> <label>Pacs</label>
+                                <input type="radio" name="situation-familiale" value="marié.e" /> <label>Marié.e</label>
+                                <input type="radio" name="situation-familiale" value="veuf.ve" /> <label>Veuf.ve</label>
+                                <input type="radio" name="situation-familiale" value="divorcé.e" /> <label>Divorcé.e</label> <br>
+                                <label for="nombre d'enfants">Nombre d'enfants</label>
+                                <input type='text' id="nombre d'enfants" name="nombre d'enfants" required>
+                                <label for="dont">dont à charge</label>
+                                <input type='text' id='dont' name='dont' required>
                             </div>
                         </fieldset>
-                         <!-- Fin Ceci est un champs d'input avec check box-->
                     </td>
-                    <td>
-                      <fieldset>
-                        <legend>Etes-vous demandeur(se) d'emploi depuis :</legend>
-                          <div>
-                            <label for="demandeur"></label>
-                            <input type="radio" id="oui" name="demandeur" checked>
-                            <label for="demandeur"> < à 1 an</label>
-                          </div>
-                          <div>
-                            <input type="radio" id="oui" name="demandeur" checked>
-                            <label for="oui"> > 1 an</label>
-                          </div>
-                          <div>
-                            <input type="radio" id="oui" name="demandeur" checked>
-                            <label for="oui"> > 3 ans</label>
-                          </div>
-                          <div>
-                            <label for="identifiant">N° identifiant Pôle emploi</label>
-                            <input type="text" id="identifiant" name="identifiant">
-                          </div>
-                          <div>
-                            <label for="identifiant">Date de la dernière inscription à Pôle Emploi :</label>
-                            <input type="date" id="identifiant" name="identifiant" required pattern="[dd] [mm] [aaaa]">
-                          </div>
-                      </fieldset>
-                  </td>
                 </tr>
-                <td>
-                  <fieldset>
-                      <div>
-                        <label for="angence">Agence Pôle Emploi</label>
-                        <input type="text" id="agence" name="agence">
-                        
-                      </div>
-                      <div>
-                        <label for="adresse">Adresse</label>
-                        <input type="text" id="adresse" name="adresse">
-                      </div>
-                      <div>
-                        <label for="code-postale">Code Postale</label>
-                        <input type="text" id="code-postale" name="code postale">
-                      </div>
-                      <div>
-                        <label for="ville">Ville</label>
-                        <input type="text" id="ville" name="ville">
-                      </div>
-                      <div>
-                        <label for="identifiant">Date de la dernière inscription à Pôle Emploi :</label>
-                        <input type="date" id="identifiant" name="identifiant" required pattern="[dd] [mm] [aaaa]">
-                      </div>
-                  </fieldset>
-              </td>
+                    <td>
+                        <fieldset>
+                            <div class="adress2">
+                                <p>Si différente pendant le stage</p>
+                                <div>
+                                    <label for="adresse-postal">Adresse postale</label>
+                                    <input type='text' id='adresse-postale' name='adresse postale' required>
+                                    <label for="code postal">Code postale</label>
+                                    <input type='text' id='code postale' name='code postale' required>
+                                    <label for="ville">Ville</label>
+                                    <input type='text' id='ville' name='ville' required>
+                                    <label for="travailleur.se handicape.e">Êtes-vous reconnu.u Travailleur.se Handicapé.e</label>
+                                    <input type="radio" name="travailleur.se handicape.e" value="oui" /> <label>oui (joindre justificatif)</label>
+                                    <input type="radio" name="travailleur.se handicape.e" value="non" /> <label>non</label>
+                                    <label for="n° de securite sociale">N° de Sécurité Sociale</label>
+                                    <input type='numero' id='n° de securite sociale' name='n° de securite sociale' required pattern="0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+            <tbody>
+                <tr>
+                    <td>
+                        <fieldset>
+                        <div class="contact">
+                            <p>Personne à contacter en cas d'urgence</p>
+                            <label for="civilite">Civilité</label>
+                            <label for="civilité">Mme</label>
+                            <input type="radio" name="civilite" id="civilite" />
+                            <label for="civilité">NOM d’usage :</label>
+                            <input type="text" name="civilite" id="civilite" />
+                            <label for="civilité">Prénom :</label>
+                            <input type="text" name="civilite" id="civilite" />
+                            <label for="civilite">(NOM de naissance)</label>
+                            <input type='text' id='civilite' name='civilité' required>
+                            <label for="prenom">Date de naissance :</label>
+                            <input type='date' id='civilite' name='civilite' required>
+                            <label for="civilite">Adresse :</label>
+                            <input type='text' id='civilite' name='civilite' required>
+                            <label for="civilite">Code Postal :</label>
+                            <input type='number' id='civilite' name='civilite' required>
+                            <label for="civilite">Ville :</label>
+                            <input type='text' id='civilite' name='civilite' required>
+                            <label for="civilite">Téléphone :</label>
+                            <input type='tel' id='civilite' name='civilite' required>
+                            <label for="civilite">Portable :</label>
+                            <input type='tel' id='civilite' name='civilite' required>
+                            <label for="civilite">e-mail :</label>
+                            <input type='email' id='civilite' name='civilite' required>
+                        </div>
+                    </fieldset>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--Le pied de page-->
+    <footer>
+    
+        <div>
+            <p>Avenue d'Issoudun - CS 70237 - 18022 - Bourges Cedex <br>
+            T. 02 48 67 80 80 - F. 02 48 67 80 99 - www.cher.cci.fr <br>
+            SIRET 181 800 012</p>
+            <p>Campus de la CCI du Cher - 25rue Louis Mallet - CS 70237 - 18022 Bourges Cedex <br>
+            T. 02488675555 - F. 0248205750</p>
+        </div>
+
+
+</footer>   
+<!--Fin  de ma première page--> 
+<!--Début de la 2ème page-->
+
+<div class="tableau2">
+<!--tableau Autres-->
+  <table>
+    <thead>
+                <h1>Autres</h1>
+    </thead>
+      <tbody>
+                <tr>
+                        <td>
+                            <fieldset> 
+                                <legend>Vos principales FORCES </legend>
+                                <label for="vos principales forces"></label>
+                                <textarea name="vos forces principales" id="vos-principales-forces" cols="30" rows="4"></textarea>
+                            </fieldset>
+                        </td>
+                        <td>
+                            <fieldset>
+                                <legend> Vos principales LIMITES </legend>
+                                <textarea name="vos principales limites" id="vos-principales-limites" cols="30" rows="4"></textarea>
+                            </fieldset>
+                        </td>
+                </tr>
       </tbody>
   </table>
+  <!--Tableau Formation initial tableaux entièrement en checkbox et radio-->
+  <table>
+    <thead>
+          <tr>
+              <th colspan="3">FORMATION INITIALE (Scolarité)</th>
+          </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                
+                <fieldset>
+                    <legend>Niveau de Formation</legend>
+                        <div>
+                            <input type="checkbox" id="c1" name="c1">
+                            <label for="c1">1 et 2 Fin de scolarité obligatoire</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c2" name="c2">
+                            <label for="c2">3 Brevet</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c3" name="c3">
+                            <label for="c3">3 CAP, BEP</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c4" name="c4">
+                            <label for="c4">4 Baccalauréat</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c5" name="c5">
+                            <label for="c5">5 DEUG, BTS, DUT, DEUST</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c6" name="c6">
+                            <label for="c6">6 Licence, Licence professionnelle</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c6" name="c6">
+                            <label for="c6">6 Maîtrise, Master 1</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c7" name="c7">
+                            <label for="c7">7 Master, Diplôme d’études approfondies,
+                            Diplôme d’études supérieures
+                            spécialisées,</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="c8" name="c8">
+                            <label for="c8">Diplôme d’ingénieur
+                            8 Doctorat, Habilitation à diriger des
+                            recherches</label>
+                        </div>
+              </fieldset>
+          </td>
+        </tr>
+        <tr>
+          <td>
+                <fieldset>
+                    <legend>Avez-vous suivi</legend>
+                    <div>
+                    <input type="checkbox" id="c9" name="c9">
+                    <label for="c9">de Mobilisation</label>
+                    </div>
+                    <div>
+                    <input type="checkbox" id="c10" name="c10">
+                    <label for="c10">de Qualification</label>
+                    </div>
+                    <div>
+                    <input type="checkbox" id="c11" name="c11">
+                    <label for="c11">d’un Bilan de
+                        Compétences</label>
+                    </div>
+                </fieldset>
+          </td>
+        </tr>
+        <tr>
+            <td>
+                    <fieldset>
+                            <legend>Connaissances
+                                en Informatique</legend>
+                        <div>
+                            <input type="radio" id="oui" name="connaissances" checked>
+                            <label for="c12">Oui</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="non" name="connaissances">
+                            <label for="c13">Non</label>
+                        </div>
+                        <!--Fin de la partie checkbox-->
+                    </fieldset>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table>
+    <tbody>
+              <tr>
+                <td>
+                    <fieldset>
+                        <label for="diplome">Diplôme(s) obtenu(s) et année(s) d’obtention :</label>
+                        <textarea name="fin de scolarite" id="fin de scolarite" cols="30" rows="1"></textarea>
+                        <input type="date" id="diplome" name="diplome">
+                            <label for="diplome">Année d'obtention</label>
+                    </fieldset>
+                </td>
+              </tr>
+    </tbody>
+</table>
+<!--Ci-dessous est un tableau intièrement en input type textarea-->
+<table>
+    <tbody>
+              <tr>
+                    <td>
+                        <fieldset>
+                            <label for="diplome">jour</label>
+                            <textarea name="diplome" id="jour" cols="10" rows="1"></textarea>
+                            
+                            <label for="diplome">Mois</label>
+                            <textarea name="diplome" id="mois" cols="10" rows="1"></textarea>
+                            
+                            <label for="diplome">Année</label>
+                            <textarea name="annee" id="annee" cols="10" rows="1"></textarea>
+                        </fieldset>
+                    </td>
+              </tr>
+    </tbody>
+</table>
+<!--Fin du tableau formation initiale-->
+<table>
+    <tbody>
+              <tr>
+                    <td>
+                        <fieldset>
+                            <legend>Avez-vous effectué durant les 12 derniers mois un ou plusieurs
+                                stages rémunérés dans le cadre de la formation
+                                professionnelle ?</legend>
+                            <div>
+                                <input type="radio" id="oui" name="professionnelle" checked>
+                                <label for="professionnelle">Oui (complétez tableau ci-
+                                dessous)</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="non" name="professionnelle">
+                                <label for="professionnelle">Non</label>
+                            </div>
+                        </fieldset>
+                    </td>
+              </tr>
+    </tbody>
+</table>
+<table>
+  <!--<thead>
+              <tr>
+                <th colspan="3"></th>
+              </tr>
+  </thead>-->
+    <tbody>
+            <tr>
+                    <td>
+                        <fieldset>
+                            <legend>FORMATION CONTINUE (professionnelle)</legend>
+                            <label for="dates">Avez-vous effectué durant les 12 derniers mois un ou plusieurs
+                                stages rémunérés dans le cadre de la formation
+                                professionnelle ?</label>
+                            <label for="dates">Oui (complétez tableau ci-
+                                dessous)</label>
+                            <input type='radio' id='dates' name='dates' required>  
+                            <label for="dates">Non</label>
+                        </fieldset>
+                    </td>
+            </tr>
+            <tr>
+                    <td>
+                        <fieldset>
+                            
+                            <label for="dates">Dates Précises</label>
+                            <label for="dates">du</label>
+                            <input type='date' id='dates' name='dates' required>
+                            <label for="dates">au</label>
+                            <input type='date' id='date' name='dates' required>
+                            <label for="dates">du</label>
+                            <input type='date' id='dates' name='dates' required>
+                            <label for="dates">au</label>
+                            <input type='date' id='date' name='dates' required>
+                            
+                            <label for="formation">Nom de l’Organisme</label>
+                            <input type='text' id='date' name='dates' required>
+                            <input type='text' id='date' name='dates' required>
+                            <label for="dates">Nom de la formation</label>
+                            <input type='text' id='date' name='dates' required>
+                            <input type='text' id='date' name='dates' required>
+                            <input type='text' id='date' name='nom' required>
+                            <label for="nature">Nature de la
+                                Formation</label>
+                            <input type='text' id='date' name='dates' required>
+                            <input type='text' id='date' name='nom' required>
+                        </fieldset>
+                    </td>
+            </tr>
+    </tbody>
+</table>
+<!--Fin du tableau Formation continue-->
+<!--Fin de la deuxième page-->
+<!--Début de la troisième page-->
+<table>
+  <thead>
+              <h3>SITUATION ACTUELLE</h3>
+  </thead>
+    <tbody>
+                <tr>
+                        <td> 
+                            <!-- Début Ceci est un champs d'input avec check box-->
+                            <fieldset>
+                                    <legend>VOUS ÊTES SANS EMPLOI</legend>
+                                <div>
+                                    <input type="checkbox" id="c1" name="c1">
+                                    <label for="c1">Vous n’avez jamais travaillé</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="c2" name="c2">
+                                    <label for="c2">Vous avez déjà travaillé</label>
+                                </div>
+                                <!--Ci-dessous ceux sont des checkbox type radis avec choix oui et non-->
+                                <div>
+                                    <label for="inscrit">Vous êtes-vous inscrit(e) à Pôle Emploi :</label>
+                                    <input type="radio" id="oui" name="inscrit" checked>
+                                    <label for="oui">oui</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="non" name="inscrit">
+                                    <label for="inscrit">Non</label>
+                                </div>
+                            </fieldset>
+                            <!-- Fin Ceci est un champs d'input avec check box-->
+                        </td>
+                </tr>
+                <tr>       
+                        <td>
+                            <fieldset>
+                            <legend>Etes-vous demandeur(se) d'emploi depuis :</legend>
+                                <div>
+                                    <label for="demandeur"></label>
+                                    <input type="radio" id="oui" name="demandeur" checked>
+                                    <label for="demandeur"> < à 1 an</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="oui" name="demandeur" checked>
+                                    <label for="oui"> > 1 an</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="oui" name="demandeur" checked>
+                                    <label for="oui"> > 3 ans</label>
+                                </div>
+                                <div>
+                                    <label for="identifiant">N° identifiant Pôle emploi</label>
+                                    <input type="text" id="identifiant" name="identifiant">
+                                </div>
+                                <div>
+                                    <label for="identifiant">Date de la dernière inscription à Pôle Emploi :</label>
+                                    <input type="date" id="identifiant" name="identifiant" required pattern="[dd] [mm] [aaaa]">
+                                </div>
+                            </fieldset>
+                        </td>
+                </tr>
+                <tr> 
+                    <td>
+                        <fieldset>
+                                <div>
+                                    <label for="angence">Agence Pôle Emploi</label>
+                                    <input type="text" id="agence" name="agence">
+                                    
+                                </div>
+                                <div>
+                                    <label for="adresse">Adresse</label>
+                                    <input type="text" id="adresse" name="adresse">
+                                </div>
+                                <div>
+                                    <label for="code-postale">Code Postale</label>
+                                    <input type="text" id="code-postale" name="code postale">
+                                </div>
+                                <div>
+                                    <label for="ville">Ville</label>
+                                    <input type="text" id="ville" name="ville">
+                                </div>
+                                <div>
+                                    <label for="interlocuteur">Votre interlocuteur</label> <br>
+                                    <label for="interlocuteur">Mme</label>
+                                    <input type="checkbox" id="interlocuteur" name="interlocuteur">
+                                    <label for="interlocuteur">M</label>
+                                    <input type="checkbox" id="interlocuteur" name="interlocuteur"> <br>
+                                    <label for="nom">Nom</label>
+                                    <input type='text' id='nom' name='nom' required>
+                                    <label for="prenom">Prénom</label>
+                                    <input type='text' id='prenom' name='prenom' required>
+                                </div>
+                                <div>
+                                    <label for="e-mail">Dernièrement, avez-vous suivi un dispositif d'insertion professionnelle avec Pôle Emploi ? </label>
+                                    <input type='email' id='e-mail' name='e-mail' required>
+                                </div>
+                                <div>
+                                    <label for="inscrit">Dernièrement, avez-vous suivi un dispositif d'insertion professionnelle avec Pôle Emploi ?</label>
+                                    <input type="radio" id="oui" name="inscrit" checked>
+                                    <label for="oui">oui</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="non" name="inscrit">
+                                    <label for="inscrit">Non</label> <br>
+                                    <label for="positif">Si oui, lequel ?</label>
+                                    <input type='text' id='positif' name='positif' required>
+                                </div> <br>
+                                    <legend>Remplir obligatoirement les informations suivantes :</legend> <br>
+                                <div>
+                                    <label for="allocation">De quel type d'allocations bénéficiez-vous?</label>
+                                    <input type="radio" id="allocation" name="allocation" checked>
+                                    <label for="allocation">ASS</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="allocation" name="allocation">
+                                    <label for="allocation">RSA</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="allocation" name="allocation">
+                                    <label for="allocation">Autre précisez</label><br>
+                                    <label for="precisez">Durée de vos allocations chômage (précisez dates) : du</label>
+                                    <input type='date' id='precisez' name='precisez' required>
+                                    <label for="precisez">au</label>
+                                    <input type='date' id='precisez' name='precisez' required><br>
+                                    <label for="sansalloc">Vous ne bénéficiez pas de l'allocation chômage, motif :</label>
+                                    <input type='tex' id='sansalloc' name='sansalloc' required>
+                                </div><br>
+                                <div>
+                                    <label for="autre">Autre situation</label>
+                                    <input type="checkbox" id="autre" name="autre" checked>
+                                    <label for="autre">Salarié(e) en activité</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="autre" name="autre">
+                                    <label for="allocation">CDD</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="autre" name="autre">
+                                    <label for="allocation">CDI</label>
+                                </div>
+                                <div>
+                                    <label for="employeur">Adresse complète de l’employeur :</label>
+                                    <input type="text" id="employeur" name="employeur">
+                                </div>
+                                <div>
+                                    <label for="employeur">Votre fonction :</label>
+                                    <input type="text" id="employeur" name="employeur">
+                                </div>
+                                <div>
+                                    <label for="employeur">Date de début de contrat :</label>
+                                    <input type="date" id="employeur" name="employeur">
+                                </div>
+                                <div>
+                                    <label for="employeur">Congé Individuel de Formation</label>
+                                    <input type="checkbox" id="employeur" name="employeur">
+                                </div>
+                                <div>
+                                    <label for="employeur">En cours d’études</label>
+                                    <input type="checkbox" id="employeur" name="employeur">
+                                </div><br>
+                                <div>
+                                    <label for="ancien.activite">ACTIVITE PROFESSIONNELLE EXERCÉE ANTÉRIEUREMENT (Les périodes de stage ne sont pas assimilées à une expérience
+                                        professionnelle)</label>
+                                    <label for="ancien.activite"> < à 1 an</label>
+                                    <input type="checkbox" id="ancien.activite" name="ancien.activite">
+                                    <label for="ancien.activite"> 1 à 3 ans</label>
+                                    <input type="checkbox" id="ancien.activite" name="ancien.activite">
+                                    <label for="ancien.activite">4 à 9 ans</label>
+                                    <input type="checkbox" id="ancien.activite" name="ancien.activite">
+                                    <label for="ancien.activite"> 10 ans et plus</label>
+                                    <input type="checkbox" id="ancien.activite" name="ancien.activite">
+                                </div>
+                            
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>DOMAINE PROFESSIONNEL DU DERNIER EMPLOI</legend>
+                            <div>
+                                <label for="domaine.pro">Administration, gestion, finances,
+                                    informatique</label>
+                                <input type="checkbox" id="domaine.pro" name="domaine.pro"required>
+                                <label for="domaine.pro">Agriculture</label>
+                                <input type="checkbox" id="domaine.pro" name="domaine.pro" required>
+                                <label for="domaine.pro">Alimentation</label>
+                                <input type='checkbox' id='domaine.pro' name='domaine.pro' required>
+                                <label for="domaine.pro">BTP</label>
+                                <input type='checkbox' id='domaine.pro' name='domaine.pro' required>
+                                <label for="domaine.pro">Bois et matériaux associés</label>
+                                <input type='checkbox' id='domaine.pro' name='domaine.pro' required>
+                                <label for="domaine.pro">Commerce, vente</label>
+                                <input type='checkbox' id='domaine.pro' name='domaine.pro' required>
+                                <label for="domaine.pro">Cuir, textile, habillement</label>
+                                <input type='checkbox' id='domaine.pro' name='domaine.pro' required>
+                                <label for="domaine.pro">Electricité, électronique</label>
+                                <input type='checkbox' id='domaine.pro' name='domaine.pro' required>
+                                <label for="domaine.pro">Formations générales</label>
+                                <input type='checkbox' id='domaine.pro' name='domaine.pro' required>
+                                <label for="domaine.pro">Formations multisectorielles</label>
+                                <input type='checkbox' id='domaine.pro' name='domaine.pro' required>
+                                <label for="domaine.pro">Hôtellerie, restauration, tourisme</label>
+                                <input type='checkbox' id='domaine.pro' name='domaine.pro' required>
+                                <label for="domaine.pro">Industries de transformatione</label>
+                                <input type='checkbox' id='domaine.pro' name='domaine.pro' required>
+                                <label for="domaine.pro">Industries graphiquese</label>
+                                <input type='checkbox' id='domaine.pro' name='domaine.pro' required>
+                                <label for="domaine.pro">Propreté, sécurité et autres
+                                    services aux collectivités</label>
+                                <input type='checkbox' id='domaine.pro' name='domaine.pro' required>
+                                <label for="domaine.pro">Réparation automobile
+                                    Santé</label>
+                                <input type='checkbox' id='domaine.pro' name='domaine.pro' required>
+                                <label for="domaine.pro">Service sociaux, sport, autres
+                                    services aux particuliers</label>
+                                <input type='checkbox' id='domaine.pro' name='domaine.pro' required>
+                                <label for="domaine.pro">Transports, logistique</label>
+                                <input type='checkbox' id='domaine.pro' name='domaine.pro' required>
+                                <label for="domaine.pro">Travail des matériaux, mécanique</label>
+                                <input type='checkbox' id='domaine.pro' name='domaine.pro' required>
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset>
+                                <legend>QUALIFICATION DE VOTRE DERNIER EMPLOI</legend>
+                                <div>
+                                    <label for="domaine.pro">Artisan, commerçant, chef d’entreprise</label>
+                                    <input type="checkbox" id="domaine.pro" name="domaine.pro"required>
+                                    <label for="domaine.pro">Agriculteur exploitant</label>
+                                    <input type="checkbox" id="domaine.pro" name="domaine.pro" required>
+                                    <label for="domaine.pro">Cadre, profession libérale ou intellectuelle supérieure</label>
+                                    <input type='checkbox' id='domaine.pro' name='domaine.pro' required>
+                                    <label for="domaine.pro">Profession intermédiaire (technicien, agent de maîtrise)</label>
+                                    <input type='checkbox' id='domaine.pro' name='domaine.pro' required>
+                                    <label for="domaine.pro">Employé</label>
+                                    <input type='checkbox' id='domaine.pro' name='domaine.pro' required>
+                                    <label for="domaine.pro">Ouvrier</label>
+                                    <input type='checkbox' id='domaine.pro' name='domaine.pro' required>
+                                </div>
+                        </fieldset>
+                    </td>
+                </tr>
+                <!--Fin de la troisième page-->
+                <!--Début de la quatrième page-->
+                <tr>
+                    <td>
+                        <fieldset>
+                                <legend>Autres</legend>
+                                <div>
+                                    <label for="plus.info">DERNIER EMPLOI OCCUPÉ :Votre fonction</label>
+                                    <input type="text" id="plus.info" name="plus.info"required>
+                                    <label for="plus.info">CDD</label>
+                                    <input type="checkbox" id="plus.info" name="plus.info" required>
+                                    <label for="plus.info">CDI</label>
+                                    <input type='checkbox' id='domaine.pro' name='plus.info' required>
+                                    <label for="plus.info">du</label>
+                                    <input type='date' id='domaine.pro' name='plus.info' required>
+                                    <label for="plus.info">au</label>
+                                    <input type='date' id='domaine.pro' name='plus.info' required>
+                                    <label for="plus.info">Licenciement</label>
+                                    <input type='checkbox' id='domaine.pro' name='plus.info' required>
+                                    <label for="plus.info">Fin de Contrat</label>
+                                    <input type='checkbox' id='domaine.pro' name='plus.info' required>
+                                    <label for="plus.info">Départ volontaire</label>
+                                    <input type='checkbox' id='domaine.pro' name='plus.info' required>
+                                    <label for="plus.info">Nom de votre entreprise :</label>
+                                    <input type='text' id='domaine.pro' name='plus.info' required>
+                                    <label for="plus.info">Adresse :</label>
+                                    <input type='text' id='domaine.pro' name='plus.info' required>
+                                    <label for="plus.info">Code Postal :</label>
+                                    <input type='text' id='domaine.pro' name='plus.info' required>
+                                    <label for="plus.info">Ville :</label>
+                                    <input type='text' id='domaine.pro' name='plus.info' required>
+                                    <label for="plus.info">Tél</label>
+                                    <input type='tel' id='domaine.pro' name='plus.info' required>
+                                    <label for="plus.info">Fax</label>
+                                    <input type='tel' id='domaine.pro' name='plus.info' required>
+                                    <label for="plus.info">Site</label>
+                                    <input type='email' id='domaine.pro' name='plus.info' required>
+                                </div>
+                        </fieldset>
+                    </td>
+                </tr>
+                <!--Fin de la quatrième page-->
+                <!--Début de la cinquième-->
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>Autres</legend>
+                            <legend>EN QUELQUES LIGNES DITES - NOUS</legend>
+                                <div>
+                                    <label for="dites.nous">Comment avez-vous connu la formation "PRÉPARATION AUX MÉTIERS DU NUMÉRIQUE" ? (Presse)</label>
+                                    <input type="checkbox" id="dites.nous" name="dites.nous"required>
+                                    <label for="dites.nous">Cap Emploi</label>
+                                    <input type="checkbox" id="dites.nous" name="dites.nous" required>
+                                    <label for="dites.nous">CIBC</label>
+                                    <input type='checkbox' id='dites.nous' name='dites.nous' required>
+                                    <label for="dites.nous">CTP Mission</label>
+                                    <input type='checkbox' id='dites.nous' name='dites.nous' required>
+                                    <label for="dites.nous">Mission locale</label>
+                                    <input type='checkbox' id='dites.nous' name='dites.nous' required>
+                                    <label for="dites.nous">PAIO</label>
+                                    <input type='checkbox' id='dites.nous' name='dites.nous' required>
+                                    <label for="dites.nous">Pôle Emploi</label>
+                                    <input type='checkbox' id='dites.nous' name='dites.nous' required>
+                                    <label for="dites.nous">Autres, précisez :</label>
+                                    <input type='text' id='dites.nous' name='dites.nous' required>
+                                    <label for="dites.nous">Pour quelles raisons avez-vous déposé votre candidature à la formation "PRÉPARATION AUX
+                                        MÉTIERS DU NUMÉRIQUE" ?</label>
+                                    <input type='text' id='dites.nous' name='plus.info' required>
+                                    <label for="dites.nous">Quel objectif professionnel vous êtes-vous fixé à l'issue de la formation ?</label>
+                                    <input type='text' id='dites.nous' name='dites.nous' required>
+                                    <label for="dites.nous">Je soussigné(e) certifie l'exactitude des renseignements ci-dessus.</label>
+                                    <label for="dites.nous">Fait à:</label>
+                                    <input type='text' id='dites.nous' name='dites.nous' required>
+                                    <label for="dites.nous">Le</label>
+                                    <input type='date' id='dites.nous' name='dites.nous' required>
+                                    <label for="dites.nous">Signature,</label>
+                                    <input type='text' id='dites.nous' name='dites.nous' required>
+                                    
+                                </div>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <div>
+                                <h1>Documents
+                                    OBLIGATOIRES
+                                    pour valider votre dossier</h1>
+                                <legend>→ Complétez le dossier et joindre :</legend>
+                                <label for="pièces">1 curriculum vitae actualisé</label>
+                                    <input type='checkbox' id='pièces' name='pièces' required>
+                                    <label for="pièces">1 photo d'identité récente à coller sur emplacement prévu à cet
+                                        effet</label>
+                                    <input type='checkbox' id='pièces' name='pièces' required>
+                                    <label for="pièces">1 Photocopie de votre attestation d’inscription à Pôle Emploi</label>
+                                    <input type='checkbox' id='pièces' name='pièces' required>
+                                    <label for="pièces">1 Photocopie du dernier avis de paiement de Pôle Emploi</label>
+                                    <input type='checkbox' id='pièces' name='pièces' required>
+                                    <label for="pièces">1 Lettre de motivation précisant votre intérêt pour la formation</label>
+                                    <input type='checkbox' id='pièces' name='pièces' required>
+                                    <label for="pièces">1 Photocopie de votre diplôme de niveau 4</label>
+                                    <input type='checkbox' id='pièces' name='pièces' required>
+                                    <label for="pièces">1 Photocopie des autres diplômes (optionnel)</label>
+                                    <input type='checkbox' id='pièces' name='pièces' required>
+                                    <label for="pièces">1 Photocopie recto-verso de votre carte nationale d'identité</label>
+                                    <input type='checkbox' id='pièces' name='pièces' required>
+                            </div>
+                        </fieldset>
+                    </td>
+                </tr>
+    </tbody>
+</table>
 
-  </div>
+</div>
+<div class="pied">
+    <div class="contact">
+        <p>→ le retourner à la :
+            Chambre de Commerce et d'Industrie du Cher
+            CCI FORMATION 18 – Carole PONCEAU
+            Avenue d’Issoudun – CS 70237 – 18022 BOURGES Cedex
+            Téléphone : 02 48 67 80 66 / Fax : 02 48 67</p>
+        <p>→ Vous serez ensuite convoqué(e) aux sélections :
+             Épreuves écrites
+             Entretien individuel</p>
+        <p>Afin d’assurer le meilleur suivi du/de la stagiaire, la CCI est amenée à collecter des données le/la concernant. Le/la stagiaire est informée qu’il/elle
+            peut s’y opposer et dispose d’un droit d’accès et de rectification ou de suppression en écrivant à :
+            CHAMBRE DE COMMERCE ET D’INDUSTRIE DU CHER
+            Avenue d’Issoudun – CS 70237- 18022 BOURGES CEDEX</p>
+            <p>La CCI s’engage à préserver la confidentialité des informations relatives au stagiaire et à son projet, et à ne les utiliser que dans le cadre des
+                services qui lui sont fournis.</p>
+    </div>
+</div>
 
 
-
-  
 </body>
 </html>

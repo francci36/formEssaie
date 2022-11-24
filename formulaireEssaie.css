@@ -1,54 +1,56 @@
-
-
 body{
   font-family: Arial, Helvetica, sans-serif;
   display: block;
-  margin: 8px;
-  background-color: rgba(128, 128, 128, 0.178);
+  margin: 60px;
+  background-color: rgba(0, 128, 0, 0.103);
+  width: 90%
 }
+.logo-header{
+  display: flex;
+  justify-content: space-between;
+}
+.tableau1 .haut h1, h2, h3, .petite-police{
+  text-align: center;
+  color: rgba(0, 0, 255, 0.774);
+}
+.tableau1 .haut h1{
+  background-color: rgba(0, 100, 0, 0.459);
 
-header .entete{
-  width: 50px;
-  height: 40px;
-  display: inline-block ;
-  justify-content: right;
+}
+.tableau1{
+  background-color: rgba(100, 148, 237, 0.281);
+  border: solid rgba(203, 221, 85, 0.815);
+}
+fieldset{
+  border: solid rgba(0, 0, 255, 0.651);
   
 }
-.conteneur{
-  display: inline-block;
-  justify-content: center;
-  border: solid rgba(0, 0, 0, 0.356);
-  line-height: 2px 80% 10px
-  width:
-}
-.haut{
-  text-align: center;
-}
-article h1{
-  text-transform: uppercase;
-  color: #004d9a;
-  text-align: center;
-  border: #c1cf78;
-}
-article h2{
-  text-transform: uppercase;
-  color: #004d9a;
-  text-align: center ;
-}
-article .haut h1{
-  text-align: center;
-  color: #004d9a;
-  margin: 0 40px 0 40px;
-  padding: 2px 0 2px 0;
-  background-color: #c1cf78;
-}
-article .form .civilite{
-  line-height: 5px;
-}
-
-article .haut span{
+legend{
   font-size: larger;
+  font-weight: bold;
 }
-article .civilite{
-  width: 80%;
+.tableau2{
+  border: solid rgba(203, 221, 85, 0.815) ;
+  background-color:rgba(100, 148, 237, 0.281);
+  border: solid ;
+}
+.tableau2 .table .thead h1{
+  text-align: center;
+}
+fieldset label{
+  margin: 3px;
+  padding: 3px;
+}
+.pied{
+  background-color: rgba(95, 158, 160, 0.432);
+  padding: 5px;
+
+}
+input{
+  padding: 4px;
+}
+@media screen {
+  width: 600px;
+
+  
 }
